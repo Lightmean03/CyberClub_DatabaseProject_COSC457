@@ -20,7 +20,7 @@ function App() {
 
   const fetchTables = async () => {
     try {
-      const response = await fetch('http://192.168.1.189:5000/api/tables');
+      const response = await fetch('http://192.168.1.186:5000/api/tables');
       if (!response.ok) throw new Error('Failed to fetch tables');
       const data = await response.json();
       setTables(data.tables || []);
