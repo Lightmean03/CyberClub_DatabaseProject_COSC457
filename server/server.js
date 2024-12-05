@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Database connection configuration
 const db = mysql.createConnection({
-  host: '192.169.1.189',
+  host: '192.168.1.189',
   user: 'clubadmin',  // Replace with your MySQL username
   password: 'database457',   // Replace with your MySQL password
   port: 3306,
