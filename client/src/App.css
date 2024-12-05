@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.nfFont{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: yellow;
+  -webkit-text-stroke: 2px black; /* Specifies stroke width and color */
+}
