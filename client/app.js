@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     const fetchTables = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/tables');
+        const response = await fetch('sqlapi.tucyber.club/api/tables');
         if (!response.ok) throw new Error('Failed to fetch tables');
         const data = await response.json();
         setTables(data.tables || []);
@@ -49,7 +49,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/query', {
+      const response = await fetch('http://sqlapi.tucyber.club/api/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: queryToExecute }),
